@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Acesso Libras - IFAM CMC</title>
+    <title>Projeto Acesso Libras</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
         }
         header {
-            background-color: #005f6b;
+            background: #005f6b;
             color: #fff;
-            padding: 20px 10px;
+            padding: 1.5rem 0;
             text-align: center;
         }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+        header p {
+            font-size: 1.1rem;
+        }
+        nav {
+            background: #003f4a;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: auto;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -29,88 +47,80 @@
         h1, h2, h3 {
             color: #005f6b;
         }
+        section {
+            margin-bottom: 2rem;
+        }
+        ul {
+            list-style: disc;
+            margin: 1rem 0 1rem 1.5rem;
+        }
         footer {
+            background: #003f4a;
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            background: #005f6b;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 1rem 0;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Projeto Acesso Libras - IFAM CMC</h1>
+        <h1>Projeto Acesso Libras</h1>
+        <p>Promovendo a aprendizagem e a inclusão por meio da Língua Brasileira de Sinais</p>
     </header>
-    <main>
-        <section>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#materiais">Materiais</a>
+        <a href="#aulas">Aulas</a>
+        <a href="#links">Links</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#fale-conosco">Fale Conosco</a>
+        <a href="#grupo">Comunidade Surda</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio">
             <h2>Sobre o Projeto</h2>
-            <p>
-                O <strong>projeto Acesso Libras</strong> é uma iniciativa aprovada pela Diretoria de Extensão, Relações Empresariais e Comunitárias (DIREC) do IFAM Campus Manaus Centro (CMC) e apoiada pelo Centro de Idiomas do IFAM (CIIFAM). 
-                Seu principal objetivo é oferecer suporte para a aprendizagem da Língua Brasileira de Sinais (Libras) pela comunidade escolar e outras pessoas interessadas.
-            </p>
-            <p>
-                Adotamos estratégias inovadoras para o ensino e aprendizado de Libras, integrando tecnologias contemporâneas. Como afirma Stumpf (2010), 
-                “o uso de computadores e tecnologias de comunicação cria ambientes colaborativos, promovendo a troca de experiências e a construção de um conhecimento compartilhado”.
-            </p>
+            <p>O <strong>Projeto Acesso Libras</strong> é uma iniciativa aprovada pela Diretoria de Extensão do IFAM Campus Manaus Centro (CMC) em parceria com o Centro de Idiomas (CIIFAM). O projeto visa oferecer suporte para a aprendizagem da Língua Brasileira de Sinais (Libras), integrando tecnologias modernas e promovendo a inclusão.</p>
         </section>
 
-        <section>
-            <h2>O que você encontrará no site</h2>
-            <ul>
-                <li>Materiais sobre Libras, incluindo textos, blogs e vídeos.</li>
-                <li>Links úteis de instituições relacionadas à Libras.</li>
-                <li>Divulgação de eventos nacionais e internacionais sobre Libras.</li>
-            </ul>
-            <p>
-                Nosso objetivo é facilitar a comunicação entre ouvintes e pessoas surdas, incentivando a aprendizagem da Libras e promovendo novas iniciativas nessa área.
-            </p>
+        <section id="materiais">
+            <h2>Materiais</h2>
+            <p>Descubra materiais educativos, como vídeos, blogs e atividades interativas, que facilitam o aprendizado de Libras e a comunicação com pessoas surdas.</p>
         </section>
 
-        <section>
-            <h2>A Comunidade Surda</h2>
+        <section id="aulas">
+            <h2>Aulas</h2>
+            <p>Participe de aulas práticas e assista a vídeos com dicas para melhorar a interação com a comunidade surda, ampliando suas habilidades de inclusão.</p>
+        </section>
+
+        <section id="links">
+            <h2>Links Úteis</h2>
+            <p>Explore uma lista de organizações, instituições e recursos dedicados à Libras, além de links para eventos regionais e internacionais.</p>
+        </section>
+
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <p>Fique atualizado sobre eventos, seminários e palestras que abordam a importância da Libras e incentivam a participação da comunidade surda.</p>
+        </section>
+
+        <section id="fale-conosco">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato conosco para tirar dúvidas, sugerir ideias ou participar de nossas iniciativas. Estamos à disposição para ajudá-lo!</p>
+        </section>
+
+        <section id="grupo">
+            <h2>Comunidade Surda</h2>
             <h3>Quem é o povo surdo?</h3>
-            <p>
-                O povo surdo é formado por indivíduos que compartilham costumes, tradições, histórias e uma identidade cultural baseada na visão como principal meio de percepção do mundo.
-            </p>
+            <p>O povo surdo compartilha tradições, costumes e uma identidade cultural única, utilizando a visão como meio principal de percepção do mundo.</p>
             <h3>O que é a comunidade surda?</h3>
-            <p>
-                A comunidade surda não é composta apenas por pessoas surdas. Ela também inclui familiares, intérpretes, professores e amigos que compartilham interesses comuns, geralmente reunidos em associações, igrejas e outras instituições.
-            </p>
+            <p>A comunidade surda reúne pessoas surdas e ouvintes, como familiares, intérpretes e amigos, promovendo a integração e a troca de experiências.</p>
         </section>
+    </div>
 
-        <section>
-            <h2>Diferenças entre "Surdo" e "Deficiente Auditivo"</h2>
-            <p>
-                Clinicamente, a diferença está na profundidade da perda auditiva:
-            </p>
-            <ul>
-                <li><strong>Surdo:</strong> Perda auditiva profunda, sem percepção de sons.</li>
-                <li><strong>Deficiente auditivo:</strong> Perda leve ou moderada, com alguma capacidade auditiva preservada.</li>
-            </ul>
-            <p>
-                Além disso, a Libras é parte essencial da identidade cultural de muitas pessoas surdas.
-            </p>
-        </section>
-
-        <section>
-            <h2>História da Libras no Brasil</h2>
-            <p>
-                A Libras foi oficialmente reconhecida como meio legal de comunicação em 2002, pela Lei nº 10.436. Este marco garantiu a inclusão da Libras no sistema educacional e assegurou o atendimento adequado às pessoas surdas.
-            </p>
-            <h3>Linha do tempo</h3>
-            <ul>
-                <li><strong>1857:</strong> Criação do Instituto Nacional de Educação de Surdos (INES) por Dom Pedro II.</li>
-                <li><strong>1875:</strong> Publicação do livro <em>Iconographia dos Signaes dos Surdos-Mudos</em>, de Flausino da Gama.</li>
-                <li><strong>1960:</strong> Descoberta de uma língua de sinais usada por indígenas no Maranhão.</li>
-                <li><strong>2002:</strong> Reconhecimento oficial da Libras pelo governo federal.</li>
-            </ul>
-        </section>
-    </main>
     <footer>
-        &copy; 2025 - Projeto Acesso Libras | IFAM CMC
+        <p>&copy; 2025 Projeto Acesso Libras | IFAM CMC</p>
     </footer>
 </body>
 </html>
