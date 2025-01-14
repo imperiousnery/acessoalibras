@@ -4,99 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acesso à Libras</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(to bottom, #f9f9f9, #e0f7fa);
-            overflow-x: hidden;
-        }
-        header {
-            background: #005f6b;
-            color: #fff;
-            padding: 1.5rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        nav {
-            background: #003f4a;
-            display: flex;
-            justify-content: center;
-            padding: 0.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
-            transition: background 0.3s, color 0.3s;
-        }
-        nav a:hover {
-            background: #007a86;
-            border-radius: 5px;
-            color: #e0f7fa;
-        }
-        .container {
-            padding: 1.5rem;
-            max-width: 1200px;
-            margin: auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 1s ease-in;
-        }
-        h1 {
-            color: #fff;
-            font-size: 2.5rem;
-        }
-        h2, h3 {
-            color: #005f6b;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        footer {
-            background: #003f4a;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 1rem;
-        }
-        #back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #005f6b;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            padding: 10px 15px;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: none;
-            transition: background 0.3s;
-        }
-        #back-to-top:hover {
-            background: #007a86;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
@@ -104,16 +13,10 @@
     </header>
 
     <nav>
-        <a href="#sobre">Sobre o Projeto</a>
-        <a href="#site">O que você encontrará no site</a>
-        <a href="#comunidade">A Comunidade Surda</a>
-        <a href="#diferencas">Diferenças</a>
-        <a href="#historia">História da Libras</a>
         <a href="#materiais">Materiais</a>
         <a href="#aulas">Aulas</a>
         <a href="#links">Links</a>
         <a href="#eventos">Eventos</a>
-        <a href="#fale-conosco">Fale Conosco</a>
     </nav>
 
     <div class="container">
@@ -183,48 +86,11 @@
     </div>
 
     <footer>
+        <button id="back-to-top">&#8593;</button>
+
         &copy; 2025 - Projeto Acesso Libras | IFAM CMC
     </footer>
+    <script src="script.js"></script>
 
-    <button id="back-to-top">&#8593;</button>
-
-    <script>
-        // Rolagem suave
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Botão de voltar ao topo
-        const backToTop = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 200) {
-                backToTop.style.display = 'block';
-            } else {
-                backToTop.style.display = 'none';
-            }
-        });
-
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Animação ao aparecer
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeIn 1s ease-in';
-                }
-            });
-        });
-
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
 </body>
 </html>
