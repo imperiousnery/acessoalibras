@@ -39,8 +39,8 @@ O site contém as seguintes seções:
 
 Para mais informações ou dúvidas, entre em contato conosco:
 
-- Email: acesso.libras@ifam.edu.br
-- Instagram: [@acessolibras_ifam](https://www.instagram.com/acessolibras_ifam)
+- Email: 
+- Instagram: [@acessolibras_ifam](https://www.instagram.com/)
 
 ---
 
